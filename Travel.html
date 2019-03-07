@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<title>Travel</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<style>
+            
+        body {
+            font-family: Arial;
+            margin: 0;
+	}
+
+	* {
+            box-sizing: border-box;
+	}
+
+	img {
+            vertical-align: middle;
+	}
+
+	/* Position the image container (needed to position the left and right arrows) */
+	.container {
+            position: relative;
+	}
+
+		/* Hide the images by default */
+	.mySlides {
+            display: none;
+	}
+
+	/* Add a pointer when hovering over the thumbnail images */
+	.cursor {
+            cursor: pointer;
+	}
+
+
+	/* Number text (1/3 etc) */
+	.numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+	}
+
+	/* Container for image text */
+        .caption-container {
+            text-align: center;
+            background-color: #222;
+            padding: 2px 16px;
+            color: white;
+	}
+
+	.row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+	/* Six columns side by side */
+	.column1 {
+            float: left;
+            width: 16.66%;
+	}
+
+	/* Add a transparency effect for thumnbail images */
+	.demo {
+            opacity: 0.6;
+	}
+
+	.active,
+	.demo:hover {
+	opacity: 1;
+	}
+		
+		
+	.center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 700px;
+            height: 500px
+	}
+		
+
+	* {
+            box-sizing: border-box;
+	}
+
+	/* Create three equal columns that floats next to each other */
+	.column {
+            float: left;
+            width: 33.33%;
+            padding: 10px;
+            height: 300px; /* Should be removed. Only for demonstration */
+	}
+
+	/* Clear floats after the columns */
+	.row:after {
+            content: "";
+            display: table;
+            clear: both;
+	}
+
+	a {
+            text-decoration: none;
+            display: inline-block;
+            padding: 8px 16px;
+        }
+
+        a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .previous {
+            background-color: #f1f1f1;
+            color: black;
+        }
+                
+              
+        #background{
+            background-image: url("assets/images/travelbg.png");
+            background-size: cover;
+            height: 100%;
+            width: 100% ;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+              
+              
+              
+              
+        </style>
+		
+	<body id="background">
+		
+        <h5 align="center"><a href="interests.html" class="previous">&laquo; Back</a></h5>
+                <h1 style="text-align:center"><u>Travel</u></h1>
+		
+		<div>
+
+			 <div class="caption-container">
+				<p id="caption"></p>
+			  </div>
+			  
+			 <br>
+		  
+		  <div class="row">
+			<div class="column1">
+			  <img class="demo cursor" src="assets/images/Portugal.jpg" style="width:200px; height:150px" onclick="currentSlide(1)" alt="Portugal">
+			</div>
+			<div class="column1">
+			  <img class="demo cursor" src="assets/images/Tenerife.jpg" style="width:200px; height:150px" onclick="currentSlide(2)" alt="Tenerife">
+			</div>
+			<div class="column1">
+			  <img class="demo cursor" src="assets/images/EiffelTower.jpg" style="width:200px; height:150px" onclick="currentSlide(3)" alt="France">
+			</div>
+			<div class="column1">
+			  <img class="demo cursor" src="assets/images/GranCanaria.jpg" style="width:200px; height:150px" onclick="currentSlide(4)" alt="Gran Canaria">
+			</div>
+			<div class="column1">
+			  <img class="demo cursor" src="assets/images/Poland.jpg" style="width:200px; height:150px" onclick="currentSlide(5)" alt="Poland">
+			</div>
+			<div class="column1">
+			  <img class="demo cursor" src="assets/images/Australia.jpg" style="width:200px; height:150px" onclick="currentSlide(6)" alt="Australia">
+			</div> 
+		  </div>
+		  
+		</div>
+		
+		
+		
+		<br><hr><br>
+
+
+		<div class="container">
+		  <div class="mySlides">
+			<div class="numbertext">1 / 6</div>
+			<img src="assets/images/Portugal.jpg" class="center">
+		  </div>
+
+		  <div class="mySlides">
+			<div class="numbertext">2 / 6</div>
+			<img src="assets/images/Tenerife.jpg" class="center">
+		  </div>
+
+		  <div class="mySlides">
+			<div class="numbertext">3 / 6</div>
+			<img src="assets/images/EiffelTower.jpg" class="center">
+		  </div>
+			
+		  <div class="mySlides">
+			<div class="numbertext">4 / 6</div>
+			<img src="assets/images/GranCanaria.jpg" class="center">
+		  </div>
+		  
+		  
+		  <div class="mySlides">
+			<div class="numbertext">5 / 6</div>
+			<img src="assets/images/Poland.jpg" class="center">
+		  </div>
+		  
+		  
+		  <div class="mySlides">
+			<div class="numbertext">6 / 6</div>
+			<img src="assets/images/Australia.jpg" class="center">
+		  </div>
+
+
+			<br><br>
+		
+			<hr>
+		
+		
+		
+			<div class="row">
+			<div class="column">
+				<h2>Portugal</h2>
+				<p>I first went to Portugal when I was 5 years old.<br>
+				We visited Opporto, Lisbon and Algarve.<br>
+				The weather there is rerally nice. It is always sunny and warm.<br>
+				I loved the food there.<br>
+				I have visited Portugal at least 6 times since then.</br>
+				I have swam with dolphins and done lots of shopping in Portugal.<br>
+				Everytime I go, I get to have a whole new experience and I love it.</p>
+			</div>
+		  
+		  
+			<div class="column">
+				<h2>Tenerife</h2>
+				<p>I went to Tenerife 3 years ago. <br>
+				I absolutely loved going to the beach there.<br>
+				The sand in Tenerife is black.<br>
+				Walking in Tenerife is so relaxing.<br>
+				It is the perfect place for relaxation and I would completely recommend it.</p>
+			</div>
+		  
+		  
+			<div class="column">
+				<h2>France</h2>
+				<p>I went to Paris, France in 2016. We visited Disneyland while we were there.<br>
+				I went up the Eiffel Tower too. The experience was unforgettable.<br>
+				I could see all of Paris from the top. The food in Frnace is really good too.<br>
+				I loved listening to the language. I learned a lot of french while I was there.</p>
+			</div>
+		
+		
+			<hr>
+		
+			<div class="column">
+				<h2>Gran Canaria</h2>
+				<p>My family and I visit Gran Canaria every Summer. We always visit the <br>
+				same place. The weather there is always really hot around 30℃. <br>
+				The sea is also warm there and we have to walk from place to place since<br>
+				we don't hire a car when we go over. I love it there. It has a peaceful and<br>
+				friendly atmosphere. They also understand English there<br>
+				The hotel we usually go is very nice, it has a jacuzzi and big pool, aswell <br>
+				as poker table and other types of fun games.
+			</div>
+		  
+		  
+			<div class="column">
+				<h2>Poland</h2>
+				<p>I visited Poland for the first time last February. We went to Krakow.<br>
+				It had been snowing for the last few weeks before we went so everywhere we went was full of snow.<br>
+				I tried skiing with my dad. It was great fun. We spent the whole day on the mountain trying to perfect our skiing method.<br>
+				In the other days we spent our time making snowmen and sliding down snow hills.<br>
+				There was a really good pizza place near where we were staying and we went to it every second day.<br>
+				It was a great trip.</p>
+			</div>
+		  
+		  
+			<div class="column">
+				<h2>Australia</h2>
+				<p>My family and i also visited Australia for 2 weeks last October.<br>
+				We went to Sydney Opera House. It was amazing looking at the big building in person.<br>
+				The weather was lovely when we went over. The australian accent is really nice.<br>
+				The food was good too. The people there are very nice.<br>
+				The beaches are amazing.</p>
+			</div>
+		</div>
+		</div>
+		
+	
+
+		<script>
+		var slideIndex = 1;
+		showSlides(slideIndex);
+
+		function plusSlides(n) {
+		  showSlides(slideIndex += n);
+		}
+
+		function currentSlide(n) {
+		  showSlides(slideIndex = n);
+		}
+
+		function showSlides(n) {
+		  var i;
+		  var slides = document.getElementsByClassName("mySlides");
+		  var dots = document.getElementsByClassName("demo");
+		  var captionText = document.getElementById("caption");
+		  if (n > slides.length) {slideIndex = 1}
+		  if (n < 1) {slideIndex = slides.length}
+		  for (i = 0; i < slides.length; i++) {
+			  slides[i].style.display = "none";
+		  }
+		  for (i = 0; i < dots.length; i++) {
+			  dots[i].className = dots[i].className.replace(" active", "");
+		  }
+		  slides[slideIndex-1].style.display = "block";
+		  dots[slideIndex-1].className += " active";
+		  captionText.innerHTML = dots[slideIndex-1].alt;
+		}
+		</script>
+		
+	</body>
+</html>
+

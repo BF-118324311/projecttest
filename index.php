@@ -7,11 +7,11 @@ and open the template in the editor.
 <html>
     <head>
         <meta charset="UTF-8">
-        <title></title>
+        <title>Beatriz Homepage</title>
     </head>
     <body>
         <?php
-        echo "Hello World";
+        include_once("Homepage.html")
         ?>
     </body>
 </html>

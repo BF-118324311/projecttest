@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+                    
+        h1, h2, p {
+            color: white;
+            text-align: center;
+        }  
+                    
+                    
+	.container {
+            position: relative;
+            width: 50%;
+        }
+
+	.image {
+            display: block;
+            width: 100%;
+            height: auto;
+	}
+
+	.overlay {
+        position: absolute;
+	bottom: 3;
+	left: 0;
+	right: 0;
+	background-color: #f0f0f5;
+	overflow: hidden;
+	width: 400px;
+        height: 300px;
+	-webkit-transform: scale(0);
+	-ms-transform: scale(0);
+	transform: scale(0);
+	-webkit-transition: .3s ease;
+	transition: .3s ease;
+	}
+
+	.container:hover .overlay {
+            -webkit-transform: scale(1);
+            -ms-transform: scale(1);
+            transform: scale(1);
+	}
+
+	.text {
+            color: black;
+            font-size: 15.5px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            text-align: center;
+	}
+
+	* {
+            box-sizing: border-box;
+	}
+
+	.column {
+            float: left;
+            width: 31.5%;
+            padding: 0px;
+	}
+
+	/* Clearfix (clear floats) */
+	.row::after {
+            content: "";
+            clear: both;
+            display: table;
+	}
+                
+        #background{
+   
+            background-image: url("assets/images/consultingbg.jpg");
+            background-size: cover;
+            height: 1000px;
+            width: auto ;
+            background-position: center;
+            background-repeat: no-repeat;
+
+        }
+                    
+                
+        </style>
+     
+        <title>Consulting Services</title>
+        
+    </head>
+
+
+        
+   <body id="background">
+       
+       <h1><u>Consulting Services</u></h1>
+       
+       <div align="center">
+            <h2>About Consulting:</h2>
+            <p>Hover over the image to see more information.</p>
+       </div>
+
+
+
+        <div class="row" align="center">
+            <div class="column">
+                <div class="container">
+                <img src="assets/images/Blockchain1.png" style="width:400px; height:300px" alt="Blockchain" class="image">
+                    <div class="overlay">
+                        <div class="text">Blockchain is a database that is shared across a network of computers.
+                            To ensure all the copies of the database are the same, the network makes constant checks. 
+                            Blockchains have been used to underpin cyber-currencies like bitcoin, but many other possible uses are emerging.
+                            <a href="http://graphics.reuters.com/TECHNOLOGY-BLOCKCHAIN/010070P11GN/index.html">Click here for more information.</a>
+                        </div>
+                    </div>
+                <img src="assets/images/Blockchain3.jpg" style="width:400px; height:300px" alt="Blockchain">
+                </div>
+            </div>
+
+
+
+        <div class="column">
+            <div class="container">
+                <img src="assets/images/AutonomousThings1.png" style="width:400px; height:300px" alt="AutonomousThings" class="image">
+                       
+                <div class="overlay">
+                    <div class="text">Autonomous Things are technological developments that are expected to bring computers 
+                                into the physical environment as autonomous entities without human direction, freely moving and interacting 
+                                with humans and other objects.
+                                <a href="https://en.wikipedia.org/wiki/Autonomous_things">Click here for more information.</a>			
+                    </div>
+                </div>
+                <img src="assets/images/autonomousthings3.jpg" style="width:400px; height:300px" alt="AutonomousThings">
+            </div>
+        </div>
+
+
+
+        <div class="column">
+            <div class="container">
+            <img src="assets/images/ImmersiveExperience1.png" style="width:400px; height:300px" alt="ImmersiveExperience" class="image">
+                      
+                <div class="overlay">
+                    <div class="text">Immersive Experience is an illusory environment that completely surrounds you such that you feel that you are 
+                            inside it and part of it. The term is associated with technology environments that command the senses such as virtual reality 
+                            and mixed reality. 
+                            <a href="https://simplicable.com/new/immersive-experience">Click here for more information.</a>
+                    </div>
+                </div>
+                <img src="assets/images/immersiveexperience3.jpg" style="width:400px; height:300px" alt="ImmersiveExperience">
+            </div>
+            </div>
+                
+
+        </div>
+     
+     
+</body>
+</html>
